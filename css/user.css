@@ -1,0 +1,52 @@
+/* Css for the standard page layout*/
+
+img{
+    height: 100%;
+    width: 20%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: dotted;
+    background-color: rgb(105, 187, 129);
+    color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+.sidebar {
+    height: 30%;
+    width: 15%;
+    margin-top: 21%;
+    position: absolute;
+    left: 37;
+    top: 0;
+    padding-top: 40px;
+    background-color: rgb(255, 255, 255);
+    }
+    
+.sidebar div {
+    padding: 18px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+    
+.body-text {
+    margin-left: 350px;
+    font-size: 18px;
+    transform: translateY(-44rem);
+    text-decoration: none;
+
+}
+
+/* Css borrowed books*/
+
+/* Css student info*/
+
+/* Css for book choices*/

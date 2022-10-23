@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/library_background.png);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 65px;
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(253, 254, 254);
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+input {
+    display: block;
+    margin: auto;
+    width: 95% ;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: rgb(85, 71, 66);
+    background-color: rgb(135, 110, 100);
+}
+
+label {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+button {
+    margin-left: 85%;
+    border-radius: 8px;
+    background-color: rgb(46, 44, 44);
+    padding: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.login1 {
+    padding: 30px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 15px;
+    width: 30px;
+    border: 2px solid;
+    border-color: rgb(86, 63, 54);
+    position: absolute;
+    margin-right: 40%;
+    margin-top: 30%;
+    width: 450px;
+    
+}
+
+.login2 {
+    padding: 30px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 15px;
+    width: 30px;
+    border: 2px solid;
+    border-color: rgb(86, 63, 54);
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 30%;
+    width: 450px; 
+}
+
+
+::placeholder { 
+    color: rgb(210, 205, 205);
+    text-align: center;
+    font-size: medium;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+    color: rgb(210, 205, 205);
+  }
+  
+  ::-ms-input-placeholder { 
+    color: rgb(210, 205, 205);
+  }
