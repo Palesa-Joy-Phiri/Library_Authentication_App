@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> National Library - Home </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+
+    <body>
+        
+        <form action="#" method="post">
+            <h1> NATIONAL &nbsp; LIBRARY </h1>
+    
+            <h2> Bookworms: When in doubt login!!! </h2>
+    
+            <div class= "login">
+                <div class= "login1">
+
+                    
+                    <h3> STUDENT PORTAL </h3>
+
+                    <div>
+                        <input class="name" type="text" name="name" placeholder="Name" required="true"> <br>
+                    </div>
+    
+                     <div>
+                             <input class="surname" type="text" name="surname" placeholder="Surname" required="true"> <br>
+                    </div>
+    
+                    <div>
+                        <input class="email" type="email" name="email" placeholder="Email Address" required="true"> <br>
+                    </div>
+    
+                    <div>
+                        <input class="password" type="password" name="password" placeholder="Email Address" required="true"> <br>
+                    </div>
+    
+                    <div>
+                        <button class="compare" type="submit">
+                             <a href="#">
+                               login
+                            </a>
+                        </button>
+                    </div>
+    
+                </div>
+    
+                <div class= "login2">
+
+                    <h3> ADMIN PORTAL </h3>
+
+                    <div>
+                        <input class="name" type="text" name="name" placeholder="Name" required="true"> <br>
+                    </div>
+    
+                     <div>
+                             <input class="surname" type="text" name="surname" placeholder="Surname" required="true"> <br>
+                    </div>
+    
+                    <div>
+                        <input class="email" type="email" name="email" placeholder="Email Address" required="true"> <br>
+                    </div>
+    
+                    <div>
+                        <input class="password" type="password" name="password" placeholder="Email Address" required="true"> <br>
+                    </div>
+    
+                    <div>
+                        <button class="compare" type="submit">
+                             <a href="#">
+                               login
+                            </a>
+                        </button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+    
+        </form>
+    
+    
+        </body>
+    </html>
