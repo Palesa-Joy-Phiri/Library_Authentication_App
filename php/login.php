@@ -41,7 +41,7 @@
     
                     <div>
                         <button class="compare" type="submit">
-                             <a href="#">
+                             <a href="user.php">
                                login
                             </a>
                         </button>
@@ -71,7 +71,7 @@
     
                     <div>
                         <button class="compare" type="submit">
-                             <a href="#">
+                             <a href="admin.php">
                                login
                             </a>
                         </button>
