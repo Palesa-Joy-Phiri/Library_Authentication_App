@@ -102,6 +102,17 @@
                 <label for="name"> Book Price </label>
                 <input type="number" id="book_price" name="book_price" min="1" max="9999">
 
+                <label for="name"> Age Group </label>
+                <select name="age_group" id="age_group">
+
+                    <option value="Children"> Children </option>
+                    <option value="Teen"> Teen </option>
+                    <option value="Young Adult"> Young Adult </option>
+                    <option value="Adult"> Adult </option>
+                    <option value="All"> All </option>
+
+                </select>
+
                 <input type="submit" value="ADD" name="submit">
     
             </form>
