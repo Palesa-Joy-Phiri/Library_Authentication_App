@@ -105,11 +105,18 @@ if(isset($_POST['submit'])) {
         $book_price = trim($_POST['book_price']);
     }
 
+    // Age Group
+    if(empty($_POST['age_group'])){
+        $null_fields[] ='Age Group';
+
+    }else{
+        $age_group = trim($_POST['age_group']);
+    }
 
 
     if(empty($null_fields)){
 
-        $sql = "INSERT INTO Books VALUES(NULL,'$title', '$author', '$publisher', '$year', '$genre','$edition', '$isbn', '$language', '$quantity', '$book_price')";
+        $sql = "INSERT INTO Books VALUES(NULL,'$title', '$author', '$publisher', '$year', '$genre','$edition', '$isbn', '$language', '$quantity', '$book_price', '$age_group')";
 
         if(!mysqli_query($connection, $sql)){
             die('Error:'.mysqli_error($connection));
@@ -174,7 +181,7 @@ if(isset($_POST['submit'])) {
     <?php
 
         require_once('config.php'); 
-            $sql ="SELECT BookID, Title, Author, Publisher, Year, Genre, Edition, ISBN, Language, Quantity, BookPrice  FROM Books";
+            $sql ="SELECT BookID, Title, Author, Publisher, Year, Genre, Edition, ISBN, Language, Quantity, BookPrice, AgeGroup  FROM Books";
             $response = @mysqli_query($connection, $sql);
 
         if($response){
@@ -193,6 +200,9 @@ if(isset($_POST['submit'])) {
                 <th> Language </th>
                 <th> Quantity </th>
                 <th> Book Price</th>
+                <th> Age Group </th>
+                <th> Update </th>
+                <th> Delete </th>
 
             </tr>';
 
@@ -211,6 +221,11 @@ if(isset($_POST['submit'])) {
                     <td>'.$row['Language'].'</td>
                     <td>'.$row['Quantity'].'</td>
                     <td>'.$row['BookPrice'].'</td>
+                    <td>'.$row['AgeGroup'].'</td>
+                    <td> <button> <a href ="" ></a> Update </button> </td>
+                    <td> <button> <a href = "" ></a> Delete </button> </td>
+                  
+
                 </tr>';
         }
             echo '</table>';
