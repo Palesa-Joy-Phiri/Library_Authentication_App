@@ -4,8 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> National Library - Book Choices</title>
-    <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="/Library_Authentication_App/css/login.css">
+    <link rel="stylesheet" href="/Library_Authentication_App/css/admin.css">
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 </head>
 <body>
@@ -189,7 +192,7 @@ if(isset($_POST['submit'])) {
         echo'<table>
 
             <tr>
-                <th> Book ID </th>
+                <th> BookID </th>
                 <th> Title </th>
                 <th> Author </th>
                 <th> Publisher </th>
@@ -222,10 +225,9 @@ if(isset($_POST['submit'])) {
                     <td>'.$row['Quantity'].'</td>
                     <td>'.$row['BookPrice'].'</td>
                     <td>'.$row['AgeGroup'].'</td>
-                    <td> <button> <a href ="" ></a> Update </button> </td>
-                    <td> <button> <a href = "" ></a> Delete </button> </td>
+                    <td> <button class ="btn btn-outline-success btn-sm"> <a href ="update.php?updateBookID ='.$row['BookID'].' " > Update </a></button> </td>
+                    <td> <button class ="btn btn-outline-danger btn-sm" type = "submit"> <a href ="delete.php?deleteBookID ='.$row['BookID'].' "  > Delete </a></button> </td>
                   
-
                 </tr>';
         }
             echo '</table>';

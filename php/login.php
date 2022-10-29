@@ -7,15 +7,15 @@
         <title> National Library - Home </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/Library_Authentication_App/css/login.css">
     </head>
 
     <body>
         
         <form action="#" method="post">
-            <h1> NATIONAL &nbsp; LIBRARY </h1>
+            <h1> Laventure National Library </h1>
     
-            <h2> Bookworms: When in doubt login!!! </h2>
+            <h2> *** Today a reader, tomorrow a leader *** </h2>
     
             <div class= "login">
                 <div class= "login1">
@@ -42,7 +42,7 @@
                     <div>
                         <button class="compare" type="submit">
                              <a href="user.php">
-                               login
+                               Login
                             </a>
                         </button>
                     </div>
@@ -72,7 +72,7 @@
                     <div>
                         <button class="compare" type="submit">
                              <a href="admin.php">
-                               login
+                               Login
                             </a>
                         </button>
                     </div>

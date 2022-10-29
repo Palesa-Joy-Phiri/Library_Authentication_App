@@ -21,7 +21,7 @@ mysqli_close($connection);
 
 //Delete from database
  require_once('config.php'); 
-    $sql ="DELETE FROM Books where id= ";
+    $sql ="DELETE FROM Books where id=  ' ".$id." '";
 
 
 if(mysqli_query($connection, $sql)){
