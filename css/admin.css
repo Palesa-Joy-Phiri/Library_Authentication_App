@@ -1,56 +1,169 @@
 /* Css for the standard page layout*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+  height: 0%;
+}
 
 img{
-    height: 100%;
-    width: 20%;
+  height: 100%;
+  width: 20%;
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: dotted;
-    background-color: rgb(105, 187, 129);
-    color: black;
+  text-decoration: dotted;
+  background-color: rgb(105, 187, 129);
+  color: black;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+  margin-bottom: -2%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 110%;
 }
 
 .sidebar {
-    height: 30%;
-    width: 15%;
-    margin-top: 21%;
-    position: absolute;
-    left: 37;
-    top: 0;
-    padding-top: 40px;
-    background-color: rgb(255, 255, 255);
-    }
+  height: 30%;
+  width: 15%;
+  margin-top: 23%;
+  position: absolute;
+  left: 37;
+  top: 0;
+  padding-top: 40px;
+   background-color: rgb(255, 255, 255);
+}
     
 .sidebar div {
-    padding: 18px;
-    font-size: 20px;
-    display: block;
-    text-align: center;
+  padding: 18px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
 }
     
 .body-text {
-    margin-left: 350px;
-    font-size: 18px;
-    transform: translateY(-44rem);
-    text-decoration: none;
+  margin-left: 350px;
+  font-size: 18px;
+  transform: translateY(-44rem);
+  text-decoration: none;
+
+}
+
+/* Admin Form*/
+
+input[type=text], select, textarea {
+  width: 35%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+   
+}
+
+.equal {  
+  margin-bottom: 10px;
+  margin-top: 120px;
+}
+  
+label {
+  margin-left: 60px;
+  display: inline-block;
+ }
+
+.title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#publisher, #genre, #language {
+  width: 56%;
+}
+
+#year {
+  width: 14.5%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+#edition {
+  width: 15%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+} 
+
+#language {
+    width: 54.5%;
+
+  }
+
+#isbn, #book_price, #quantity {
+  width: 15%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.move {
+  margin-left: 3%;
+}
+  
+input[type=submit] {
+  background-color: #ff8b32;
+  color: rgb(6, 6, 6);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 84.5%;
+  margin-top: 2%;
+}
+
+footer {
+  text-align: center;
+  text-shadow: 180ch;
+  margin-top: -7.2%;
+  background-color: rgba(201, 208, 210, 0.917);
+  padding-bottom: 0.7%;
+  padding-top: 4px;
+
+}
+
+
+.reserved {
+  margin-left: 25%;
+}
+
+.pic {
+  width: 2%;
+  height: 2%;
+  margin-left: 23%;
+  margin-bottom: -0.2%;
 
 }
 
 /* Css add new books*/
 
 #content {
-    margin-left: 350px;
-    font-size: 18px;
-    transform: translateY(-44rem);
+  margin-left: 350px;
+  font-size: 18px;
+  transform: translateY(-44rem);
 }
 
 #header {
