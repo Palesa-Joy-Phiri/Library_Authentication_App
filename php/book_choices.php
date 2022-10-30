@@ -4,12 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> National Library - Book Choices</title>
-    <link rel="stylesheet" href="/Library_Authentication_App/css/login.css">
-    <link rel="stylesheet" href="/Library_Authentication_App/css/admin.css">
-
+    
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href= "/Library_Authentication_App/css/book_choices.css">
 
+    
 </head>
 <body>
     
@@ -146,36 +147,25 @@ if(isset($_POST['submit'])) {
 <div>
 
     <nav class = "nav">
-            <div>
-                <img src="../images/library_sidebar.png">
-            </div>
+     <img src="../images/library_icon.png" alt="Library Icon">
+        <h4> Laventure National Library </h4>
+
+        <div class="dropdown">
+
+            <button class="dropbtn" style="float:right"> Admin Access </button>
+                <div class="dropdown-content">
+                     <a class="dropdown-item" href="/php/admin.php"> Add Books</a>
+                    <a class="dropdown-item" href="#"> Add Students </a>
+                    <a class="dropdown-item" href="/php/book_choices.php">Book Choices</a>
         
-            <div class = "sidebar">
-
-                <div>
-                    <a href="/login.html">
-                         + ADD BOOKS
-                    </a>
                 </div>
-
-                <div>
-                    <a href="/login.html">
-                         + ADD STUDENTS
-                    </a>
-                </div>
-
-                <div>
-                    <a href="/login.html">
-                        + BOOK CHOICES
-                    </a>
-                </div>
-
-            </div>
+        </div>
 
     </nav>
 
     <div class = "body-text">
         <h1> Administration Portal</h1>
+        <h6> Books in Library </h6>
 
     </div>
 
@@ -225,8 +215,8 @@ if(isset($_POST['submit'])) {
                     <td>'.$row['Quantity'].'</td>
                     <td>'.$row['BookPrice'].'</td>
                     <td>'.$row['AgeGroup'].'</td>
-                    <td> <button class ="btn btn-outline-success btn-sm"> <a href ="update.php?updateBookID ='.$row['BookID'].' " > Update </a></button> </td>
-                    <td> <button class ="btn btn-outline-danger btn-sm" type = "submit"> <a href ="delete.php?deleteBookID ='.$row['BookID'].' "  > Delete </a></button> </td>
+                    <td> <button class ="btn btn-outline-success btn-sm"> <a class="update" href ="update.php?updateBookID ='.$row['BookID'].' " > Update </a></button> </td>
+                    <td> <button class ="btn btn-outline-danger btn-sm" type = "submit"> <a class="delete" href ="delete.php?deleteBookID ='.$row['BookID'].' "  > Delete </a></button> </td>
                   
                 </tr>';
         }
